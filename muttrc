@@ -1,0 +1,25 @@
+set realname = "Yao Zi"
+set from = "ziyao@disroot.org"
+
+set folder = ~/Mail
+set spoolfile = ~/Mail/spool
+set postponed= ~/Mail/postponed
+set record = ~/Mail/sent
+set editor = "mvim"
+
+set pop_delete = yes
+set pop_host = "pops://ziyao@disroot.org"
+set timeout = 30
+
+set smtp_url = "smtps://ziyao@disroot.org"
+
+bind index gg first-entry
+bind index G last-entry
+bind index R fetch-mail
+bind index r group-chat-reply
+bind pager r group-chat-reply
+
+set sort = "threads"
+set sort_aux = "date"
+
+my_hdr Cc: Yao Zi <ziyao@disroot.org>
