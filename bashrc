@@ -1,1 +1,2 @@
 PS1="\[\e[0;31m\]@\\h\[\e[0m\]:\[\e[1;34m\]\\W\[\e[0m\]$ "
+export PATH="$HOME/.local/bin:$PATH"
