@@ -53,10 +53,11 @@ output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
 #
 # Example configuration:
 #
-input "2:7:SynPS/2_Synaptics_TouchPad" {
+input type:touchpad {
     dwt disable
     tap enabled
     middle_emulation enabled
+    drag_lock disable
 }
 #
 # You can get the names of your inputs by running: swaymsg -t get_inputs
@@ -221,7 +222,8 @@ bar {
 }
 
 exec fcitx5 -d
-# exec pipewire
-# exec wireplumber
+exec pipewire
+exec wireplumber
+exec /usr/lib/xdg-desktop-portal-wlr
 
 include /etc/sway/config.d/*
